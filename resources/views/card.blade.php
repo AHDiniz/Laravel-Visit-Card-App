@@ -12,28 +12,27 @@
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/app.css">
 </head>
-<body>
+<body class="bg-success">
 
-    <div class="container">
+    <div class="container position-absolute top-50 start-50 translate-middle">
         <div class="row">
             <div class="col-12">
-                <h1>Hello, I'm {{$card->name}}.</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <h3>About Me</h3>
-                <p>{{$card->description}}</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-6">
-                <a href="{{$card->linkedin_link}}" class="btn btn-primary mb-3">LinkedIn</a>
-            </div>
-            <div class="col-6">
-                <a href="{{$card->github_link}}" class="btn btn-primary mb-3">GitHub</a>
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title">Hello, I'm {{$card->name}}.</h1>
+                        <hr>
+                        <h3>About Me</h3>
+                        <p class="card-text">{{$card->description}}</p>
+                        <hr>
+                        <div class="btn-group" role="group">
+                            <a href="{{$card->linkedin_link}}" class="btn btn-outline-success mb-3">LinkedIn</a>
+                            <a href="{{$card->github_link}}" class="btn btn-outline-success mb-3">GitHub</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    
 </body>
 </html>

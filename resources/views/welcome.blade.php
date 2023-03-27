@@ -62,8 +62,8 @@
                                 <label for="github" class="col-sm-2 input-group-text">GitHub URL</label>
                                 <input type="text" class="form-control" id="github" name="github">
                             </div>
-                            <div class="mb-3 row">
-                                <button type="submit" class="btn btn-outline-success mb-3">Generate Image</button>
+                            <div class="d-flex justify-content-center aligh-items-center">
+                                <button type="submit" class="btn btn-outline-success">Generate Image</button>
                             </div>
                         </form>
                     </div>
