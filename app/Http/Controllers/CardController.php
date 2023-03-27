@@ -10,6 +10,14 @@ class CardController extends Controller
 {
     public static function store(Request $request)
     {
+        if ($request->name == null || $request->name == "")
+        {
+            return view('welcome', [
+                'status' => 'You must fill at least your name.',
+                'slug' => null
+            ]);
+        }
+
         $card = new Card;
         $card->name = $request->name;
         $name = explode(" ", $request->name);
@@ -20,9 +28,9 @@ class CardController extends Controller
         $card->linkedin_link = $request->linkedin;
         $card->github_link = $request->github;
         $card->save();
-
+        
         QrCode::format('png')->generate(url($card->slug), $card->slug . "_qr_code.png");
-
+        
         return view('welcome', [
             'status' => 'Virtual Visit Card successfully created.',
             'slug' => $card->slug

@@ -24,7 +24,16 @@
                         <p class="card-text">This site helps you create your web visit card. Just put your info bellow that a image with a QR code with a link to your web card will be created.</p>
                         <hr>
 
-                        @if($status != null && $status == 'Virtual Visit Card successfully created.')
+                        @if($status != null && $status == 'You must fill at least your name.')
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="alert alert-danger">
+                                    {{$status}}
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        @elseif($status != null && $status == 'Virtual Visit Card successfully created.')
                             <div class="row">
                                 <div class="col-12">
                                     <div class="alert alert-success">
