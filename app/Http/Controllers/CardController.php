@@ -24,9 +24,9 @@ class CardController extends Controller
         $card->slug = "";
         foreach ($name as $n)
             $card->slug .= strtolower($n);
-        $card->description = $request->description;
-        $card->linkedin_link = $request->linkedin;
-        $card->github_link = $request->github;
+        $card->description = $request->description == null ? "" : $request->description;
+        $card->linkedin_link = $request->linkedin == null ? "#" : $request->linkedin;
+        $card->github_link = $request->github == null ? "#" : $request->github;
         $card->save();
         
         QrCode::format('png')->generate(url($card->slug), $card->slug . "_qr_code.png");
