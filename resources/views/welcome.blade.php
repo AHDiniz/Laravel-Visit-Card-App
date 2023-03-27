@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Virtual Visit Card</title>
     
-    <link rel="stylesheet" href="{{HTML::style(css/bootstrap/bootstrap-grid.min.css)}}">
-    <link rel="stylesheet" href="{{HTML::style(css/bootstrap/bootstrap-reboot.min.css)}}">
-    <link rel="stylesheet" href="{{HTML::style(css/bootstrap/bootstrap-utilities.min.css)}}">
-    <link rel="stylesheet" href="{{HTML::style(css/bootstrap/bootstrap.min.css)}}">
-    <link rel="stylesheet" href="{{HTML::style(css/app.css)}}">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap-utilities.min.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
 </head>
 <body class="bg-success">
 
@@ -48,7 +48,7 @@
                             @csrf
                             <div class="input-group mb-3">
                                 <label for="name" class="col-sm-2 input-group-text">Name</label>
-                                <input type="text" class="form-control" id="name" name="name">
+                                <input type="text" class="form-control" id="name" name="name" required>
                             </div>
                             <div class="input-group mb-3">
                                 <label for="description" class="col-sm-2 input-group-text">Description</label>

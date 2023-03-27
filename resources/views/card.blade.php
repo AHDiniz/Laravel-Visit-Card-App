@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{$card->name}}</title>
     
-    <link rel="stylesheet" href="{{HTML::style(css/bootstrap/bootstrap-grid.min.css)}}">
-    <link rel="stylesheet" href="{{HTML::style(css/bootstrap/bootstrap-reboot.min.css)}}">
-    <link rel="stylesheet" href="{{HTML::style(css/bootstrap/bootstrap-utilities.min.css)}}">
-    <link rel="stylesheet" href="{{HTML::style(css/bootstrap/bootstrap.min.css)}}">
-    <link rel="stylesheet" href="{{HTML::style(css/app.css)}}">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap-utilities.min.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
 </head>
 <body class="bg-success">
 
@@ -33,6 +33,6 @@
             </div>
         </div>
     </div>
-
+    
 </body>
 </html>
