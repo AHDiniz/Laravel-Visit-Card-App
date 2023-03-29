@@ -54,7 +54,6 @@ class CardController extends Controller
                 ]);
             }
         }
-
     }
 
     public static function find(string $slug)

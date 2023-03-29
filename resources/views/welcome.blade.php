@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Virtual Visit Card</title>
     
-    <link rel="stylesheet" href="css/bootstrap/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="css/bootstrap/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="css/bootstrap/bootstrap-utilities.min.css">
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="{{URL::asset('css/bootstrap/bootstrap-grid.min.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('css/bootstrap/bootstrap-reboot.min.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('css/bootstrap/bootstrap-utilities.min.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('css/bootstrap/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('css/app.css')}}">
 </head>
 <body class="bg-success">
 
